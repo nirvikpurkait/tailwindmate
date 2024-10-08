@@ -34,11 +34,13 @@ https://github.com/JaleelB/tailwindmate/assets/78449846/348294b8-3e4d-4c4c-bfa4-
 ## Features
 
 Here are some of the features that Tailwindmate provides out-of-the-box:
+
 - [Tailwind Color Conversion](#tailwind-class-conversion)
 - [Standard CSS Color Code Conversion](#standard-css-color-code-conversion)
 - [Versatile Color Format Support](#versatile-color-format-support)
 
 ### Tailwind Color Conversion
+
 Input a color in any format (HEX, RGB, HSL, RGBA, or HSLA) and get the corresponding Tailwind CSS class.
 
 ![Tailwind Class Conversion Screenshot](https://raw.githubusercontent.com/JaleelB/tailwindmate/main/public/to-tailwind.png)
@@ -56,6 +58,7 @@ Embraces a variety of color formats for maximum compatibility with your existing
 ![Versatile Color Format Screenshot](https://raw.githubusercontent.com/JaleelB/tailwindmate/main/public/formats.png)
 
 ## Usage
+
 To use TailwindMate, simply input your desired color code or Tailwind CSS class in the appropriate field and the application will instantly provide you with the conversion. You can also copy the converted code to your clipboard with a single click.
 
 ## Motivation
@@ -77,9 +80,10 @@ Here's how you can contribute:
 
 - Jaleel Bennett ([@jal_eelll](https://twitter.com/jal_eelll))
 
+## Contributor
+
+- Nirvik Purkait
+
 ## License
 
 Licensed under the [MIT license](https://github.com/JaleelB/tailwindmate/blob/main/LICENSE.md).
-
-
-

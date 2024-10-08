@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import ColorComponent from "components/color";
 import { type Metadata } from "next";
 import Link from "next/link";
@@ -33,11 +32,11 @@ export default function Page() {
           </p>
           <p className="mt-5 text-base text-neutral-300 sm:mt-3">
             Simply enter your color code or tailwind class and let TailwindMate
-            do the work. Whether it's color names like 'red', 'blue', or
-            'green', hex codes, RGB or HSL values or tailwind color classes like
-            rose-600 or teal-400, TailwindMate's converter will provide you with
-            the closest matching Tailwind color class or equivalent color code
-            values.
+            do the work. Whether it&apos;s color names like &apos;red&apos;,
+            &apos;blue&apos;, or &apos;green&apos;, hex codes, RGB or HSL values
+            or tailwind color classes like rose-600 or teal-400,
+            TailwindMate&apos;s converter will provide you with the closest
+            matching Tailwind color class or equivalent color code values.
           </p>
           <p className="mt-5 text-base text-neutral-300 sm:mt-3">
             After conversion, the tailwind color class or equivalent color codes

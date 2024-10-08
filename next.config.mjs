@@ -17,10 +17,9 @@ const config = {
     locales: ["en"],
     defaultLocale: "en",
   },
-  experimental: {
+  experimental: {},
+  images: {
+    remotePatterns: [{ hostname: "api.producthunt.com" }],
   },
-  images:{
-    domains:['api.producthunt.com']
-  }
 };
 export default config;

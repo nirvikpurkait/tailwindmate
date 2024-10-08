@@ -1,3 +1,5 @@
+import WhatsNew from "@/components/whatsNew";
+import WhatsNewDetails from "@/components/whatsNewDetails";
 import Footer from "components/footer";
 import Header from "components/header";
 import Nav from "components/nav";
@@ -14,7 +16,7 @@ export default function ColorLayout({
       <main className="w-screen px-8 py-20">
         <section className="mx-auto flex w-full max-w-[1200px] flex-col justify-center md:w-[90%] lg:flex-row lg:justify-between">
           <div className="mb-8 w-full lg:mb-0">
-            <h1 className="hidden text-center text-3xl sm:block md:w-[600px] md:text-4xl lg:text-left">
+            <h1 className="m-auto hidden text-center text-3xl sm:block md:w-[600px] md:text-4xl lg:m-0 lg:text-left">
               Experience Effortless Color Conversion for Tailwind with
               TailwindMate
             </h1>
@@ -27,19 +29,18 @@ export default function ColorLayout({
               classes to HEX, RGB, RGBA, HSL, and HSLA formats.
             </p>
           </div>
-          <button
-            className="mx-auto h-min w-full rounded-xl bg-blue-600 bg-gradient-to-r px-14 py-3 text-sm font-medium text-white sm:max-w-[250px] lg:mx-0"
+          <Link
+            className="mx-auto h-min w-full rounded-xl bg-blue-600 bg-gradient-to-r px-14 py-3 text-center text-sm font-bold text-white sm:max-w-[250px] lg:mx-0"
             style={{
               backgroundImage:
                 "linear-gradient(to right, #004ef5, #3B82F6, #418cc9, #10B981)",
               backgroundSize: "200% 200%",
               animation: "gradient-animation 5s ease-in-out infinite",
             }}
+            href={"https://github.com/nirvikpurkait/tailwindmate"}
           >
-            <Link href={"https://github.com/JaleelB/tailwindmate"}>
-              Visit Project Repo
-            </Link>
-          </button>
+            Visit Project Repo
+          </Link>
         </section>
 
         <section className="mx-auto mt-20 w-full max-w-[1200px]">
@@ -49,6 +50,7 @@ export default function ColorLayout({
         </section>
 
         {children}
+        <WhatsNew detaiils={<WhatsNewDetails />} />
       </main>
       <Footer />
     </div>
