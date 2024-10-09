@@ -11,7 +11,7 @@ import { findTailwindClassHexEquivalent } from "@/scripts/fromTailwind";
 import preprocessColor from "@/scripts/preprocessColor";
 
 type ColorComponentProps = {
-  type: string;
+  type: "to-tailwind" | "from-tailwind";
   placeholder: string;
 };
 

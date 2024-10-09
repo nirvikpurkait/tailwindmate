@@ -10,12 +10,12 @@ export default function WhatsNew({ detaiils }: { detaiils: React.ReactNode }) {
   }
 
   return (
-    <div className="mt-12 w-full rounded-md border border-neutral-700 lg:mt-20">
+    <div className="m-auto mt-12 w-full max-w-[1200px] rounded-md border border-neutral-700 lg:mt-20">
       <button
         onClick={toggleWhatsNewStatus}
         className={`flex w-full items-center justify-between border-b-neutral-700 px-5 py-3.5 text-white ${whatsNewOpened ? "border-b" : "border-0"}`}
       >
-        What&apos;s new
+        What&apos;s New ?
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className={`size-4 transition-all ${whatsNewOpened ? "rotate-0" : "rotate-180"}`}

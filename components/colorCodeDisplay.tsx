@@ -15,14 +15,14 @@ function ColorCodesDisplay({ hexColor, copyFunc }: ColorCodesDisplayProps) {
   }));
 
   return (
-    <div className="mx-auto mt-10 max-w-5xl rounded-md border border-neutral-700 bg-neutral-900 text-neutral-300 lg:mt-16">
+    <div className="mx-auto mt-10 rounded-md border border-neutral-700 bg-neutral-900 text-neutral-300 lg:mt-16">
       <div className="border-b border-b-neutral-700 px-5 py-3.5 text-white">
         Color code conversions
       </div>
-      <div className="grid gap-y-4 px-5 py-6 md:grid-cols-2 md:gap-x-12">
+      <div className="grid px-5 py-6 md:grid-cols-2 md:gap-x-[10vw]">
         {colorCodesArray.map((code) => (
           <div
-            className="flex justify-between"
+            className="group flex items-center justify-between rounded-md px-3 py-2 outline-none transition-all hover:outline-1 hover:outline-neutral-700"
             key={code.name}
             onClick={() => {
               copyFunc(code.value);
@@ -32,7 +32,7 @@ function ColorCodesDisplay({ hexColor, copyFunc }: ColorCodesDisplayProps) {
               <span className="font-bold">{code.name}:</span> {code.value}
             </p>
             <svg
-              className="hidden cursor-pointer sm:block"
+              className="cursor-pointer transition-all group-hover:text-neutral-400"
               xmlns="http://www.w3.org/2000/svg"
               width="21"
               height="21"

@@ -47,8 +47,8 @@ const Footer = () => {
               className="underline hover:text-neutral-600"
             >
               tailwindmate
-            </Link>
-            .
+            </Link>{" "}
+            to add some extra functionlity.
           </p>
           <p>
             &copy; {`${year}`} Built by{" "}
